@@ -15,47 +15,54 @@
 
 <body>
   <div class="sidebar">
-    <div id="caption">Adventure awaits!</div>
+    <div id="caption">Japan awaits</div>
   </div>
   <div class="main">
-    <div class="hero">You know you need something like this in your life, to help you realize your deepest weeb dreams. <br> 
-      Sign up <em>now</em> to get started! <br>
+    <div class="hero">
+      <p>Are you ready to embark on a grand adventure to realize your deepest weeb dreams?</p> 
       <br>
-      You <em>know</em> you want to!</div>
-    
-    <form action="./index.html" method="post">
+      <p>Sign up <em>now</em> to embrace the romance of the cherry blossoms.</p>
+      <br>
+      <p>You <em>know</em> you want to!</p>
+    </div>
+
+    <form action="" method="post" novalidate>
 
       <div class="main-form">
-        <h1 class="form-header">Let's do this!</h1>
-
         <div class="input">
-          <label for="first-name">First Name</label>
-          <input type="text" id="first-name" name="first-name" required>
+          <label for="first-name">First Name<span>required</span></label>
+          <input type="text" id="first-name" name="first-name" placeholder=" " required>
+          <div class="error">&nbsp;</div>
         </div>
 
         <div class="input">
-          <label for="last-name">Last Name</label>
-          <input type="text" id="last-name" name="last-name" required>
+          <label for="last-name">Last Name<span>required</span></label>
+          <input type="text" id="last-name" name="last-name" placeholder=" " required>
+          <div class="error">&nbsp;</div>
         </div>
 
         <div class="input">
-          <label for="email">E-Mail</label>
-          <input type="email" id="email" name="email" required>
+          <label for="email">E-Mail<span>required</span></label>
+          <input type="email" id="email" name="email" placeholder=" " required>
+          <div class="error">&nbsp;</div>
         </div>
 
         <div class="input">
           <label for="phone">Phone Number</label>
-          <input type="tel" id="phone" name="phone">
+          <input type="tel" id="phone" name="phone" placeholder=" " >
+          <div class="error">&nbsp;</div>
         </div>
 
         <div class="input">
-          <label for="pw">Password</label>
-          <input type="password" id="pw" name="pw" minlength="8" required>
+          <label for="pw">Password<span>required</span></label>
+          <input type="password" id="pw" name="pw" minlength="8" placeholder=" " required>
+          <div class="error">&nbsp;</div>
         </div>
 
         <div class="input">
-          <label for="pw-confirm">Confirm Password</label>
-          <input type="password" id="pw-confirm" name="pw-confirm" required>
+          <label for="pw-confirm">Confirm Password<span>required</span></label>
+          <input type="password" id="pw-confirm" name="pw-confirm" minlength="8" placeholder=" " required>
+          <div class="error">&nbsp;</div>
         </div>
       </div>
 
